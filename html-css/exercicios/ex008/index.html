@@ -1,49 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Formatação de Textos</title>
-    <style>
-        mark {
-            background-color: #eb7f94;
-        }
-    </style>
+    <title>Outras Formatações</title>
 </head>
-
 <body>
-    <h1>Pricipais formatações</h1>
-    <h2>Negrito / Destaque</h2>
-    <p>Nessa frase temos um termo em <b>negrito</b> usando a tag &lt;B&gt; (tag não semântica).</p>
-    <p>Nessa frase tem um termo em <strong>destaque</strong> usando a tag &lt;strong&gt; (tag semântica)</p>
-    <h2>Itálico / Ênfase</h2>
-    <p>Nessa frase temos um termo em <i>itálico</i> usando a tag &lt;i&gt; (tag não semântica) </p>
-    <p>Nessa frase temos um termo em <em>ênfase</em>. usando a tag &lt;em&gt; (tag semântica)</p>
-    <hr> ************* Lembrando todas as tags usadas ate agora tem fechamento *************
-    <hr>
-
-    <h2>Texto Marcado</h2>
-    <p>Podemos criar também <mark style="background-color: #a672d6;">um texto marcardo</mark> usando a tag mark </p>
-    <p>Se eu fizer <mark>&lt;mark&gt; 2262625122 vezes</mark> como usei &lt;style&gt; lá em cima todos vão ficar da
-        mesma cor.</p>
-    <h2>Texto grande e pequeno</h2>
-    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse paragrafo</p>
-    <h2>Texto deletado</h2>
-    <p>Podemos marcar um <del>texto como excluido</del>, para indicar que ele pode ser lido mas nao considerado.</p>
-    <h2>Texto Inserido</h2>
-    <p>Podemos marcar um<ins> texto como inserido</ins> com a tag &lt;ins&gt; (semântica)
-        para dar enfase e indicar que ele foi adicionado depois</p>
-    <p>existe também o texto <u>sublinhado</u> com a tag &lt;u&gt; (tag não semantica)</p>
-    <h2>Texto sobrescrito</h2>
-    <p>Para escrever coisas do tipo x<sup>20</sup>+3 para isso deve-se usar o comando &lt;sup&gt;.</p>
-    <!--AQUI ELEVADO X ELAVADO A 20-->
-    <h2>Texto subescrito</h2>
-    <p>Para inserir coisas do tipo H<sub>2</sub>O Para isso deve-se usar o comando &lt;sub&gt;.</p>
-    <!--AQUI O NUMERO 2 FICOU MAIS EMBAIXO-->
+    <h1>Outras Formatações</h1>
+    <h2>Código-fonte / Pré-Formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <pre> 
+        <p>Tudo que é colocado dentro da tag &lt;pre&gt; fica com essa formatação, considerando os espaços. <br><strong>Pra tira os espaços aperta shift + tab.</strong>
+        </p>
+        <code>
+            num = int(inpult('Digita um numero'))
+            if num % 2 == 0;
+                print(f'O numero {num} é par!)
+            else:
+                print(f'O numero é ímpar!)
+            print('Fim do programa.')
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido.</q></p>
+    <h2>Citações completas</h2>
+    <p>Uma frase muito interessante é:</p>
+    <blockquote cite="https://www.pensador.com/autor/joseph_addison/">
+        "Há diversos tipos de curiosidade; uma de interesse, que nos leva ao desejo de aprender o que nos pode ser útil, e outra, de orgulho, que provém do desejo de saber o que os outros ignoram."
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> <abbr title="Cascading Style Sheets">CSS</abbr>, estou adorando!!!</p>
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em html.</bdo> </p>
 
 </body>
-
 </html>
