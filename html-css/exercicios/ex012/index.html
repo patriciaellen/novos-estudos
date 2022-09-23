@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Esse vídeo está hospedado no meu próprio servidor.</p>
+    
+    <video width="500" poster="imagens/imagem.jpg" controls>
+       <source src="midia/meu-video.mp4.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
+
+<!--
+    As midias de video podem vir com os seguintes formatos
+    - MP4, M4V, WEBM E OGV.
+    Deve-se usar o source src="" das seguintes formas  para cada formato 
+    MP4: <source src="midia/nomedoarquivo.mp4" type="video/mp4"> 
+    M4V: <source src="midia/nomedoarquivo.m4v" type="video/m4v">
+    WEBM: <source src="midia/nomedoarquivo.webm" type="video/webm">
+    OGV: <source src="midia/nomedoarquivo.ogv" type="video/ogv">
+
+    ** No código só tem mp4, pois o vídeo não foi convertido nos outros formados. **
+
+    Na tag video temos:
+    width="500" que é o tamnho
+    poster="imagens/imagem.jpeg" que é um "capa" para o video
+    controls que é o comando para aparece o play, pause do video e etc.
+    *loop (se usarmos o video continua reproduzindo)
+-->
